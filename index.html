@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinephile Challenge</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/2699/PNG/512/netflix_logo_icon_170919.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="startpage">
+        <audio autoplay loop id="audio" src="./assets/homebgm.mp3"></audio>
+        <button id="playPauseButton">off</button>
+        <!-- title -->
+        <div class="title">
+            <p id="cine">Cinephile</p>
+            <p id="challenge">Challenge</p>
+        </div>
+
+        <!-- caption -->
+
+        <div class="caption">
+            <p id="caption">Test your movie prowess in our cinematic<span id="quest">quest</span></p>
+        </div>
+
+        <!-- name,submit -->
+
+        <div class="name">
+            <input type="text" id="name" name="name" placeholder="name"/>
+            <button id="submitbtn" type="submit">Submit</button>
+        </div>
+
+        <!-- startbtn -->
+
+        <div class="startbtn">
+            <button id="start">start</button>
+        </div>
+
+        <!-- instruction -->
+
+        <div class="infobox">
+            <div class="info_title">
+                <span>Instructions</span>
+            </div>
+            <div class="info_list">
+                <div class="info">1. For <span>music</span> turn on/off the <span>button</span>.</div>
+                <div class="info">2. Don’t talk about <span>ci******e</span> challenge.</div>
+                <div class="info">3. You will only be given <span>15 seconds</span> for each question.</div>
+                <div class="info">5. Once you select your answer, it can't be <span>undone</span>.</div>
+                <div class="info">6. You'll get points on the basis of your <span>correct</span> answers.</div>
+                <div class="info">7. You can skip the questions <span>but</span> no points will be given.</div>
+            </div>
+            <div class="infobtns">
+                <button id="nobtn">no</button>
+                <button id="gobtn">go</button>
+            </div>   
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

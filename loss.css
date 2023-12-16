@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+    background-image: url(./assets/whatsApp.jpg);
+    background-repeat: no-repeat;
+    background-size: 1540px 100%;   
+    height: 100vh;
+}
+
+/* lostif */
+.lossbox{
+    background-color: black;
+    height: 420px;
+    width: 930px;
+    box-shadow: 10px 10px 20px 2px rgba(255, 0, 0, 0.789);
+    box-shadow:1px 0px 5px 0px rgba(255, 0, 0, 0.471);
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+    border-radius: 10px;
+}
+
+/* lostvideo */
+
+.video{
+    padding: 30px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 30%;
+}
+
+/* score */
+
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    left: 42.9%;
+    top: 30%;
+}
+
+/* namescore */
+
+#namescore{
+    width: 50%;
+    color: white;
+    font-size: 35px;
+    position: relative;
+    bottom: 40%;
+    left: 43%;
+}
+
+
+#playagain{
+    height: 50px;
+    width: 140px;
+    color: white;
+    background-color: black;
+    border: 1px solid blue;
+    position: absolute;
+    left: 76%;
+    bottom: 5%;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#playagain:hover{
+    color: black;
+    background-color: blue;
+}
+
+
+@media screen and (max-width: 738px){
+    body{
+        height: 2300px;
+        width: 100%;
+        background-position: center center;
+    }
+    .lossbox{
+        position: absolute;
+        height: 700px;
+        width: 500px;
+        top: 30%;
+        left: 15%;
+    }
+    .video{
+        right: 1.5%;
+    }
+    #playagain{
+        top: 90%;
+        left: 35%;
+    }.score{
+        top: 50%;
+        left: 18%;
+    }
+    #namescore{
+        top: 10%;
+        left: 18%;
+    }
+}

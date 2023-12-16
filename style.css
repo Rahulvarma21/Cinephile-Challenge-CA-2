@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+    background-image: url(./assets/whatsApp.jpg);
+    background-repeat: no-repeat;
+    background-size: 1540px 100%;   
+    height: 100vh;
+}
+
+/* title */
+
+#cine{
+    color: white;
+    font-size: 120px;
+}
+
+#challenge{
+    color: red;
+    position: relative;
+    left: 13px;
+    font-size: 120px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+
+/* caption */
+
+#caption{
+   color: aliceblue;
+   font-size: 2rem;
+   display: flex;
+   justify-content: center;
+   position: relative;
+   top: 200px;
+}
+
+#quest{
+    color: red;
+    position: relative;
+    left: 5px;
+}
+
+/* name, submitbtn */
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 250px;
+}
+
+#name{
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border-right: 1px solid grey;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    font-size: 20px;
+}
+
+#submitbtn{
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    cursor: pointer;    
+    font-size: 20px;
+}
+
+#submitbtn:hover{
+    color: black;
+    background-color: white;
+}
+
+/* startbtn */
+
+.startbtn{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 300px;
+}
+
+#start{
+    padding: 10px 30px;
+    background-color: rgba(2, 0, 0, 0.8);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.startbtn #start:hover{
+    color: black;
+    background-color: red;
+}
+
+/* instructions */
+
+.infobox{
+    opacity: 0;
+    color: white;
+    height: 420px;
+    width: 820px;
+    background-color: rgba(0, 0, 0, 0.952);
+    box-shadow: 10px 10px 20px 2px rgb(255, 255, 255);
+    box-shadow:1px 0px 5px 0px rgba(255, 255, 255, 0.471);
+    pointer-events: none;
+    position: absolute;
+    bottom: 21%;
+    left: 23%;
+    border-radius: 10px;
+}
+
+.activeInfo{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* infotitle */
+
+.info_title, .info {
+    font-size: 27px;
+}
+
+.infobox .info_title{
+    color: red;
+    height: 100px;
+    width: 100%;
+    border: 1px solid red;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 30px;
+}
+
+/* infolist */
+
+.infobox .info_list .info{
+    margin: 5px 0;
+    padding: 0 25px;
+}
+
+span{
+    color: red;
+}
+
+/* infobuttons */
+#nobtn{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid red;
+    height: 40px;
+    width: 80px;
+    bottom: 5%;
+    position: absolute;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#nobtn:hover{
+    color: black;
+    background-color: red;
+}
+
+#gobtn{
+    height: 40px;
+    width: 80px;
+    color: white;
+    background-color: black;
+    border: 1px solid blue;
+    position: absolute;
+    left: 88%;
+    bottom: 5%;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#gobtn:hover{
+    color: black;
+    background-color: blue;
+}
+
+.infobtns{
+    padding: 0 35px;
+}
+
+/* transtion for startbtn and infobox */
+.startbtn,.infobox{
+    transition: all 0.6s ease;
+}
+
+/* audio */
+
+#playPauseButton{
+    cursor: pointer;
+    padding: 11px 15px;
+    border-radius: 50px;
+    position: relative;
+    left: 90%;
+    top: 35px;
+    background-color: black;
+    box-shadow: 0px 0px 40px rgb(51, 0, 255);
+    color: white;
+    font-size: 20px; 
+    border: none;
+}
+
+#playPauseButton:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: 0px 0px 40px rgb(255, 0, 0);
+}
+
+/* responsive design */
+
+@media screen and (max-width: 435px) {
+    #cine{
+        font-size: 60px;
+        position: absolute;
+        bottom: 110%;
+    }    
+    #challenge{
+        font-size: 80px;
+        position: relative;
+        bottom: 25px;
+        left: 0.5%;
+    }
+    body{
+        background-size: 1540px 100%;   
+        height: 1300px;
+        font-family: 'Bebas Neue', sans-serif;
+        width: 100%;
+        background-image: url('assets/whatsApp.jpg');
+        background-position: center center;
+
+    }
+    #playPauseButton{
+        position: relative;
+        left: 85%;
+        top: 35px;
+    }
+    .startbtn{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 300px;
+    }
+    .name{
+        position: relative;
+        top: 240px;
+    }
+    #caption{
+        font-size: 30px;
+    }
+    .caption{
+        padding: 10px 55px;
+    }
+    .infobox{
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        top: 15%;
+        left: 0px;
+    }
+    .info_title, .info {
+        font-size: 25px;
+    }
+    #gobtn{
+        position: absolute;
+        left:75%;
+        bottom: 5%;
+    }
+    #quest{
+        position: absolute;
+        top: 39px;
+        left: 62%;
+
+    }
+}

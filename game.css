@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+    background-image: url(./assets/whatsApp.jpg);
+    background-repeat: no-repeat;
+    background-size: 1540px 100%;   
+    height: 100vh;
+
+}
+
+/* questionbox */
+
+.questionbox{
+    height: 420px;
+    width: 930px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.91);
+    box-shadow: 10px 10px 20px 2px rgb(255, 255, 255);
+    box-shadow:1px 0px 5px 0px rgba(255, 255, 255, 0.471);
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+    border-radius: 10px;
+    animation: enter 0.6s ease;
+}
+
+/* header0 */
+header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 30px 50px;
+    padding-top: 30px;
+}
+
+#question{
+    font-size: 23px;
+}
+
+#time{
+    font-size: 29px;
+}
+
+/* options */
+
+.options{
+    font-size: 30px;
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 50px 0;
+}
+
+.option{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.option:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* color for wrong and correct answers */
+
+.option.correct{
+    color: green;
+    background-color: black;
+    border: 1px solid green;
+}
+
+.option.wrong{
+    color: red;
+    background-color: black;
+    border: 1px solid red;
+}
+
+/* hover for wrong and correct answers */
+
+.option.correct:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 255, 0);
+}
+
+.option.wrong:hover{
+    color: rgb(0, 0, 0);
+    background-color: red;
+}
+
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nextbtn{
+    font-size: 20px;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    position: absolute;
+    left: 84.3%;
+    bottom: 9%;
+}
+
+.nextbtn:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* for mute button */
+
+#sound{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 1480px;
+    cursor: pointer;
+}
+
+/* for transition between last page to this page */
+
+@keyframes enter {
+    0% {
+      opacity: 0;
+      transform: scale(1); /* Start small */
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); /* Grow to full size */
+    }
+}
+
+
+@media screen and (max-width: 738px){
+    
+}
